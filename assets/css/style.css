@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 #header .social-links {
   margin-top: 40px;
   display: flex;
-  background-color: rgba(245, 245, 245, 0.251);
+  background-color: rgba(0, 0, 0, 0.251);
   padding: 25px;
   border-radius: 20px;
   max-width: 900px;
