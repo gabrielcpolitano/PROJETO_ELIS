@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(245, 245, 245, 0.251);
   padding: 25px;
   border-radius: 20px;
-  
+  max-width: 900px;
   margin-bottom: 25px;
 }
 
