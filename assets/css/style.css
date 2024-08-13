@@ -342,6 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 
   #header.header-top img{
     width: 110px;
+    border-radius: 13px;
   }
 }
 
