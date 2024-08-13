@@ -310,6 +310,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-top img{
   width: 150px;
+  margin: 3px;
 }
 
 #header.header-top .social-links, #header.header-top h2 {
@@ -337,6 +338,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   #header.header-top h1 {
     font-size: 26px;
+  }
+
+  #header.header-top img{
+    width: 110px;
   }
 }
 
@@ -1150,5 +1155,4 @@ section .container {
     top: 10px;;
     box-sizing: border-box;
   }
-
 }
