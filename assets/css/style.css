@@ -78,8 +78,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+
 #header h1 a, #header h1 a:hover {
-  color: #ffffff;
   line-height: 1;
   display: inline-block;
 }
@@ -303,6 +303,14 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   background: #09203a;
 }
+#header img{
+  width: 200px;
+  border-radius: 20px;
+}
+
+#header.header-top img{
+  width: 150px;
+}
 
 #header.header-top .social-links, #header.header-top h2 {
   display: none;
@@ -311,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 #header.header-top h1 {
   margin-right: auto;
   font-size: 36px;
+  color: #fff;
 }
 
 #header.header-top .container {
