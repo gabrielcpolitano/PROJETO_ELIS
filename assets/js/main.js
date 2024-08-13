@@ -149,3 +149,9 @@
   });
 
 })(jQuery);
+
+
+
+function recarregarPagina() {
+  location.reload(); // Recarrega a página atual
+}
