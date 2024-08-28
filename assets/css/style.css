@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   margin-right: 8px;
-  border-radius: 20%;
+  border-radius: 10px;
   width: 40px;
   height: 40px;
 }
@@ -344,6 +344,10 @@ h1, h2, h3, h4, h5, h6 {
   #header.header-top img{
     width: 110px;
     border-radius: 13px;
+  }
+
+  .espacamento{
+    margin-top: 350px;
   }
 }
 
