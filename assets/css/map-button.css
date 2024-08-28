@@ -1,0 +1,22 @@
+.map-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #12d640;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.map-button:hover {
+  background-color: #0cae33;
+  transform: translateY(-3px);
+}
+
+.map-button:active {
+  transform: translateY(0);
+}
