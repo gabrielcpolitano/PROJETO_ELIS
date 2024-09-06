@@ -182,3 +182,19 @@ hr {
   max-width: 100%;
   width: 100%;
 }
+
+
+/* h2 controll */
+h2 {
+  max-width: 100%; /* Garante que o h2 não exceda a largura da tela */
+  overflow: hidden; /* Remove a rolagem */
+  text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+  white-space: nowrap; /* Impede a quebra de linha automática */
+}
+
+@media (max-width: 768px) {
+  h2 {
+    white-space: normal; /* Permite quebra de linha em telas pequenas para evitar rolagem horizontal */
+    word-wrap: break-word; /* Garante que palavras longas sejam quebradas se necessário */
+  }
+}
