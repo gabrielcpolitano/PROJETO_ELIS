@@ -1,0 +1,189 @@
+/* General Styling */
+
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#about {
+  padding: 60px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+ 
+#header h2.text-big{
+  text-align: center;
+  font-size: 70px;
+  color: #09203a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.intro p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.3rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Add space for image between paragraphs */
+p + img {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Address, Email, Contact Info */
+.contact-info {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-info span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Attractive Button Styling */
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #ff6b6b;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e65e5e;
+  transform: scale(1.05);
+}
+
+
+
+
+/* IMAGES */
+.slider {
+  display: flex;
+  justify-content: center; /* Horizontally centers the image */
+  align-items: center;   
+  overflow: hidden;
+}
+
+.slider img {
+  display: none; /* Hide all images initially */
+  width: 70%;
+  height: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 
+              0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider img.active {
+  display: block; /* Only show the active image */
+}
+
+
+/* HR */
+hr {
+  border: none; /* Remove the default border */
+  height: 3px; /* Set the height of the line */
+  background: linear-gradient(to right, #08003a, #4000ef); /* Gradient background */
+  width: 80%; /* Set the width of the line */
+  margin: 20px auto; /* Center the line and add vertical spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-top: 135px;
+  margin-bottom: 40px;
+}
+
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  /* IMAGES */
+  .slider img {
+    height: 270px;
+  }
+  /* HR */
+  hr {
+    margin-top: 105px;
+  }
+
+  #header h2.text-big {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1.1rem;
+  }
+
+  .cta-button {
+      font-size: 1rem;
+      padding: 12px 30px;
+  }
+}
+
+
+
+/* BUTTONS */
+
+/* Hide the button on small screens */
+#up-page {
+  display: none;
+}
+
+/* Show the button on larger screens (PC) */
+@media (min-width: 1024px) {
+  #up-page {
+      display: block;
+  }
+}
+
+
+/* ---------SmartPhone-------- */
+
+/* Hide the button by default */
+#scroll-to-services {
+  display: none;
+}
+
+/* Show the button only on smartphones (up to 767px wide) */
+@media (max-width: 1024px) {
+  #scroll-to-services {
+      display: block;
+      
+      margin: 40px auto;
+      margin-bottom: 0px;
+  }
+}
+
+
+
+/* INSTAGRAM */
+.blockquote-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px; /* Adjust as needed */
+}
+
+.instagram-media {
+  max-width: 100%;
+  width: 100%;
+}

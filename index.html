@@ -31,6 +31,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/map-button.css" rel="stylesheet">
   <link href="assets/css/servicos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/intro.css">
 
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
@@ -60,160 +61,104 @@
 
       <div class="topo"></div>
       <div class="espacamento"></div>
-      <img src="/assets/img/logo.png" alt="" onclick="recarregarPagina()" style="cursor: pointer;">
+      <img id="logo" src="/assets/img/logo.png" alt="" onclick="recarregarPagina()" style="cursor: pointer;">
       <h2 style="color:#09203a">Premium tickets <span class="typing" style="color:#468af2; font-size: 35px; font-weight: 900;"></span></h2>
       <nav class="nav-menu d-none d-lg-block" style="background-color: #09203a; padding: 20px;">
         <ul>
           <li class="active"><a href="#header"> <span>Contato</span></a></li>
-          <li><a href="#about"><span>Informaçoes</span></a></li>
           <li><a href="#mapa"> <span>Mapa </span></a></li>
-          <li><a href="#servicos"> <span>Serviços</span></a></li>
+          <li><a href="#servicos" id="nav-services"> <span>Serviços</span></a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
 
       <div class="social-links">
   
-        <div class="row mt-2">
-  
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-map"></i>
-              <h3>Meu Endereço</h3>
-              <div class="social-links perfil" style="display: block;">
-                <p>São Paulo - Centro</p>
-                <p>Rua Quintino Bocaiuva, 71 sala 613</p>
-                <p>Cep: 01004-10</p>
-              </div>
-            </div>
-          </div> 
-  
-  
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-envelope"></i>
-              <h3>Email</h3>
-              <div class="social-links perfil">
-                <p>elis@elistickets.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 d-flex align-items-stretch">
-            <div class="info-box">
-              <i class="bx bx-phone-call"></i>
-              <h3>Contact</h3>
-              <p>+55 (21) 98120-6570</p>
-              <div class="social-links perfil">
-                <a href="#" target="_blank" class="linkedin"><i class="bx bxl-instagram"></i></a>
-                <a href="#" target="_blank" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        
+        <div id="about" style="padding: 60px 0; background-color: #fff;">
+          <div class="intro">
+            <h2 class="text-big">Quem somos?</h2>
+            <p>
+              Desde 2019, a Elis Tickets Travel tem transformado o sonho de visitar Orlando em realidade para mais de 2.000 clientes.
+              Nossa agência, liderada por Elis, é especializada em oferecer experiências de viagem personalizadas para o destino mais mágico do mundo.
+            </p>
+            
+            <!-- Placeholder for an image -->
 
-              </div>
+
+            <div class="slider">
+              <img src="assets/img/we-are/1.png" alt="">
+              <img src="assets/img/we-are/2.png" alt="">
+              <img src="assets/img/we-are/3.png" alt="">
+              <img src="assets/img/we-are/4.png" alt="">
+              <img src="assets/img/we-are/5.jpg" alt="">
+              
             </div>
-          </div>
+            <hr>
+
+            <!-- IMAGE END -->
+            
+            <h2 class="text-big">Por que escolher a <br>Elis Tickets Travel?</h2>
+            <p>
+              Na Elis Tickets Travel, acreditamos que cada viagem é uma experiência única e que cada cliente merece um atendimento personalizado. Nosso compromisso é entender suas expectativas e necessidades, garantindo que você receba um serviço exclusivo, com todo o cuidado e atenção que sua viagem merece.
+            </p>
+
+        
+            <!-- Placeholder for another image -->
+            <div class="slider">
+              <img src="assets/img/client/1.jpg" alt="">
+              <img src="assets/img/client/2.jpg" alt="">
+              <img src="assets/img/client/3.jpg" alt="">
+              <img src="assets/img/client/4.jpg" alt="">
+              <img src="assets/img/client/5.jpg" alt="">
+              <img src="assets/img/client/6.jpg" alt="">
+              <img src="assets/img/client/7.jpg" alt="">
+              <img src="assets/img/client/8.jpg" alt="">
+              
+            </div>
+            <hr>
+            
+            <h2 class="text-big">Planejamos Sua Viagem com Excelência e Cuidado</h2>
+            <p>
+              Trabalhamos com uma logística detalhada para criar pacotes que atendam às suas expectativas sem comprometer a qualidade. Cada orçamento
+              é elaborado pensando em você, para que sua viagem seja inesquecível e acessível.
+            </p>
+        
+            <p>
+              Na Elis Tickets Travel, acreditamos que realizar o sonho de conhecer Orlando é uma conquista, e estamos aqui para tornar essa experiência a mais especial possível.
+              Não oferecemos apenas pacotes de viagem; criamos memórias que serão lembradas para sempre.
+            </p>
+
+            <div class="blockquote-container">
+              <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/C0kJsk2A4Z7/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <!-- Instagram content here -->
+              </blockquote>
+            </div>
+
+            <hr>
+            
+        
+            <div class="contact-info">
+              <span><strong>Endereço:</strong> São Paulo - Centro, Rua Quintino Bocaiuva, 71 sala 613</span>
+              <span><strong>CEP:</strong> 01004-10</span>
+              <span><strong>Email:</strong> elis@elistickets.com</span>
+              <span><strong>Contato:</strong> +55 (21) 98120-6570</span>
+            </div>
+        
+             <!-- Add this button somewhere in your HTML -->
+             <button id="scroll-to-services" class="btn btn-primary phone">Go to Services</button>
+
         </div>
+        
         <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
       </div>
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me.png" class="img-fluid" alt="" style="border-radius: 20px;">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content informe" data-aos="fade-left">
-          <p>
-            Procurando um hotel, mas não tem certeza sobre preços e qualidade? Podemos ajudar você a encontrar a melhor opção de hospedagem em Orlando, com toda a segurança e tranquilidade que você precisa. Nossa equipe dedicada está pronta para oferecer as melhores soluções de viagem personalizadas para suas necessidades.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Telefone:</strong> +1 480-401-8112</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> contato@empresa.com</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Localização:</strong> Orlando, FL</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Orçamento:</strong> <a href="contato.html">Solicitar Cotação</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Serviços</h2>
-      </div>
   
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-hotel-line" style="color: #ffbb2c;"></i>
-            <h3>Reserva de Hotéis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-plane-line" style="color: #5578ff;"></i>
-            <h3>Passagens Aéreas</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-car-line" style="color: #e80368;"></i>
-            <h3>Aluguel de Carros</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-map-pin-line" style="color: #7d241c;"></i>
-            <h3>Pacotes Turísticos</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-ticket-line" style="color: #28a745;"></i>
-            <h3>Ingressos para Parques</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-plane-line" style="color: #f1081f;"></i>
-            <h3>Seguro de Viagem</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-customer-service-2-line" style="color: #47aeff;"></i>
-            <h3>Atendimento 24/7</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-wallet-3-line" style="color: #ffc107;"></i>
-            <h3>Consultoria Financeira</h3>
-          </div>
-        </div>
-      </div>
-  
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
+
 
 
 
@@ -421,6 +366,9 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/whats.js"></script>
+  <script src="assets/js/imgs.js"></script>
+  <script src="assets/js/button-serviços.js"></script>
+  <script async src="//www.instagram.com/embed.js"></script>
 
 </body>
 
