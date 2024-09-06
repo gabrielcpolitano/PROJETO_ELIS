@@ -92,7 +92,7 @@ p + img {
 
 .slider img {
   display: none;
-  width: 70%;
+  width: 40%;
   height: auto; /* Mantém a proporção da imagem */
   margin: 0 auto;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 
@@ -118,6 +118,10 @@ hr {
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+  .slider img {
+    width: 70%;
+    
+  }
   .container {
     width: 95%; /* Aumenta o uso da tela em dispositivos menores */
   }
