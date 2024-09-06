@@ -1,8 +1,6 @@
 /* General Styling */
 * {
-  box-sizing: border-box;
-  max-width: 100vw; /* Limita o tamanho do conteúdo à largura da tela */
-  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+  max-width: 100vw; 
 }
 
 body {
