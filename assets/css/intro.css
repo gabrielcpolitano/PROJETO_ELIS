@@ -1,10 +1,12 @@
 /* General Styling */
 * {
   box-sizing: border-box;
+  max-width: 100vw; /* Limita o tamanho do conteúdo à largura da tela */
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden; /* Garante que o body também não tenha rolagem horizontal */
 }
 
 .container {
@@ -23,7 +25,7 @@ body {
   border-radius: 10px;
 }
  
-#header h2.text-big{
+#header h2.text-big {
   text-align: center;
   font-size: 70px;
   color: #09203a;
@@ -82,73 +84,73 @@ p + img {
   transform: scale(1.05);
 }
 
-
-
-
 /* IMAGES */
 .slider {
   display: flex;
-  justify-content: center; /* Horizontally centers the image */
+  justify-content: center;
   align-items: center;   
   overflow: hidden;
 }
 
 .slider img {
-  display: none; /* Hide all images initially */
+  display: none;
   width: 70%;
-  height: 600px;
+  height: auto; /* Mantém a proporção da imagem */
   margin: 0 auto;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 
               0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .slider img.active {
-  display: block; /* Only show the active image */
+  display: block;
 }
-
 
 /* HR */
 hr {
-  border: none; /* Remove the default border */
-  height: 3px; /* Set the height of the line */
-  background: linear-gradient(to right, #08003a, #4000ef); /* Gradient background */
-  width: 80%; /* Set the width of the line */
-  margin: 20px auto; /* Center the line and add vertical spacing */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #08003a, #4000ef);
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 135px;
   margin-bottom: 40px;
 }
 
-
-
-
 /* Responsive Styling */
 @media (max-width: 768px) {
-  /* IMAGES */
-  .slider img {
-    height: 270px;
+  .container {
+    width: 95%; /* Aumenta o uso da tela em dispositivos menores */
   }
+
+  #about {
+    padding: 10px 20px; /* Reduz o padding em telas menores */
+  }
+
+  /* Ajusta a altura da imagem para dispositivos menores */
+  .slider img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% da tela */
+  }
+
   /* HR */
   hr {
     margin-top: 105px;
   }
 
   #header h2.text-big {
-      font-size: 2rem;
+    font-size: 2rem; /* Ajusta o tamanho do título em telas menores */
   }
 
   p {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
   }
 
   .cta-button {
-      font-size: 1rem;
-      padding: 12px 30px;
+    font-size: 1rem;
+    padding: 12px 30px;
   }
 }
-
-
 
 /* BUTTONS */
 
@@ -159,33 +161,24 @@ hr {
   display: none;
 }
 
-/* Show the button only on smartphones (up to 767px wide) */
+/* Show the button only on smartphones (up to 1024px wide) */
 @media (max-width: 1024px) {
   #scroll-to-services {
-      display: block;
-      
-      margin: 40px auto;
-      margin-bottom: 0px;
+    display: block;
+    width: 90%;
+    margin: 20px auto; /* Ajusta o botão para caber bem na tela */
+    margin-bottom: 0;
   }
 }
-
-
 
 /* INSTAGRAM */
 .blockquote-container {
   display: flex;
   justify-content: center;
-  padding: 20px; /* Adjust as needed */
+  padding: 20px; /* Ajuste de espaçamento */
 }
 
 .instagram-media {
   max-width: 100%;
   width: 100%;
-}
-
-
-@media (max-width: 768px) {
-  .container {
-    width: 95%; /* Aumenta o uso da tela em dispositivos menores */
-  }
 }
