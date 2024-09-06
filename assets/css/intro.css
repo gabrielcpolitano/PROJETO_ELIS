@@ -1,5 +1,11 @@
 /* General Styling */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  overflow: hidden;
+}
 
 .container {
   width: 85%;
@@ -9,6 +15,8 @@
 }
 
 #about {
+  margin: 0 auto;
+  width: 90%;
   padding: 20px 50px;
   background-color: #fff;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -144,19 +152,6 @@ hr {
 
 /* BUTTONS */
 
-/* Hide the button on small screens */
-#up-page {
-  display: none;
-}
-
-/* Show the button on larger screens (PC) */
-@media (min-width: 1024px) {
-  #up-page {
-      display: block;
-  }
-}
-
-
 /* ---------SmartPhone-------- */
 
 /* Hide the button by default */
@@ -186,4 +181,11 @@ hr {
 .instagram-media {
   max-width: 100%;
   width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Aumenta o uso da tela em dispositivos menores */
+  }
 }
